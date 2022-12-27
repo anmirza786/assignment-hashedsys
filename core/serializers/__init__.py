@@ -1,2 +1,3 @@
+from .deal_selializer import DealSerializer
 from .category_selializer import CategorySerializer
 from .subcategory_selializer import SubCategorySerializer

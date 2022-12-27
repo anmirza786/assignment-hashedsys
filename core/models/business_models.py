@@ -18,3 +18,6 @@ class Business(models.Model):
     license_no = models.CharField(
         max_length=255, null=False, blank=False, verbose_name='License Number')
     picture = models.FileField(upload_to='business/', null=True, blank=True)
+
+    def __str__(self):
+        return str(self.business_name)

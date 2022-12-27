@@ -10,3 +10,6 @@ class SubCategory(models.Model):
         Category, related_name='category', on_delete=models.CASCADE)
     subcategory_status = models.SmallIntegerField(
         default=1, choices=StatusEnum.choices, verbose_name='Category Status')
+
+    def __str__(self):
+        return str(self.subcategory_name)
